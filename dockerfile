@@ -5,7 +5,8 @@ FROM nginx:latest
 COPY index.html /usr/share/nginx/html/
 COPY style.css /usr/share/nginx/html/
 COPY script.js /usr/share/nginx/html/
-COPY tetris.yaml /usr/share/nginx/html/
+COPY manifests/tetris-deploy.yaml /usr/share/nginx/html/
+COPY manifests/tetris-svc.yaml /usr/share/nginx/html/
 
 # Expose port 80 to allow external access to the web server
 EXPOSE 80
