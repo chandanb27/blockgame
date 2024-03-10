@@ -29,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DCOKERHUB_USERNAME }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/blockgame
