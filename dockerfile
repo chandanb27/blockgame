@@ -2,9 +2,7 @@
 FROM nginx:latest
 
 # Copy your Tetris game files (HTML, CSS, JavaScript, YAML) to the appropriate location
-COPY index.html /usr/share/nginx/html/
-COPY style.css /usr/share/nginx/html/
-COPY script.js /usr/share/nginx/html/
+
 COPY manifests/tetris-deploy.yaml /usr/share/nginx/html/
 COPY manifests/tetris-svc.yaml /usr/share/nginx/html/
 
